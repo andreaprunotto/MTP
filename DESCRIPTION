@@ -1,0 +1,28 @@
+Package: MTP
+Title: Implementation of the Multiple Translation Path translation tool
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Andrea",
+           family = "Prunotto",
+           role = c("aut", "cre"),
+           email = "prunotto@imbi.uni-freiburg.de",
+           comment = c(ORCID = "0000-0003-1235-1740"))
+Description: The package collects translations from on line tools and produce a list of translation candidates, with score. 
+    It needs "docker" and "RSelenium" to be installed (with firefox).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1.9001
+Imports:
+    stringr,
+    textreadr,
+    curl,
+    XML,
+    RSelenium,
+    rJava,
+    rvest,
+    tidyr,
+    httr,
+    R.utils,
+    stringi
