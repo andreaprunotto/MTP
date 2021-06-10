@@ -402,13 +402,13 @@ generate_tps=function(
 google_translate=function(sl,tl,send,remDr){
 
 	url="https://consent.google.com/m?continue=https://translate.google.com/&gl=DE&m=0&pc=t&hl=en-US&src=1"
-	agree=list()
-	while(length(agree)==0)
-	{
+	#agree=list()
+	#while(length(agree)==0)
+	#{
 		remDr$navigate(url)
 		agree=getElem(remDr,"xpath","/html/body/div/c-wiz/div/div/div/div[2]/div[1]/div[4]/form/div[1]/div/button")
-	}
-	agree$clickElement()
+	#}
+	tryCatch(agree$clickElement(),error=function(e)e)
 	Sys.sleep(2)
 	
 	url=URLencode(paste("https://translate.google.com/?sl=",sl,"&tl=",tl,"&op=translate&text=",paste(send,collapse="\n"),sep=""))
