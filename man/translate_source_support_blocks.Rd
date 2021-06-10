@@ -9,7 +9,8 @@ translate_source_support_blocks(
   project_name,
   reftime,
   refsleep,
-  timeout_translations
+  timeout_translations,
+  remDr
 )
 }
 \arguments{
@@ -22,6 +23,8 @@ translate_source_support_blocks(
 \item{refsleep}{Sleeping time, numeric. Default 60 (seconds)}
 
 \item{timeout_translations}{Default 20 seconds}
+
+\item{remDr}{The active remote driver}
 }
 \value{
 A data frame with appending direct translations

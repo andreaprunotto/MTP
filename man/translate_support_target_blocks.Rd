@@ -9,7 +9,8 @@ translate_support_target_blocks(
   project_name,
   reftime,
   refsleep,
-  timeout_translations
+  timeout_translations,
+  remDr
 )
 }
 \arguments{
@@ -22,6 +23,8 @@ translate_support_target_blocks(
 \item{refsleep}{Sleeping time, numeric. Default 60 (seconds)}
 
 \item{timeout_translations}{Default 20 seconds}
+
+\item{remDr}{The active remote driver}
 }
 \value{
 support_translations_file tcs A data frame with the TCs and the related score

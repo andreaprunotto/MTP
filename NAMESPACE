@@ -20,4 +20,4 @@ export(generate_source_support_blocks)
 export(generate_support_target_blocks)
 export(translate_source_support_blocks)
 export(translate_support_target_blocks)
-
+export(integrate_translations)
