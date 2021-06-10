@@ -408,6 +408,9 @@ google_translate=function(sl,tl,send,remDr){
 		remDr$navigate(url)
 		#agree=getElem(remDr,"xpath","/html/body/div/c-wiz/div/div/div/div[2]/div[1]/div[4]/form/div[1]/div/button")
 		agree=getElem(remDr,"css selector","VfPpkd-vQzf8d")
+		Sys.sleep(3)
+		agree=getElem(remDr,"xpath","/html/body/c-wiz/div/div/div/div[2]/div[1]/div[4]/form/div[1]/div/button")
+
 	#}
 	tryCatch(agree$clickElement(),error=function(e)e)
 	Sys.sleep(2)
